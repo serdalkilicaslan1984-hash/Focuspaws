@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FocusPaws - Productivity & Care</title>
+    <title>FocusPaws - Productivity & Care / Üretkenlik ve Bakım</title>
     <style>
         :root {
             --primary: #FFB7B2;
@@ -20,7 +20,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: var(--bg);
             color: var(--text);
             line-height: 1.6;
@@ -51,7 +51,7 @@
         .hero {
             display: flex;
             align-items: center;
-            padding: 80px 0;
+            padding: 60px 0;
             gap: 50px;
         }
 
@@ -60,15 +60,25 @@
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
             color: #333;
         }
 
         .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
             color: #666;
+        }
+
+        .lang-section {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .lang-section:last-child {
+            border-bottom: none;
         }
 
         .btn {
@@ -80,6 +90,7 @@
             border-radius: 30px;
             font-weight: bold;
             transition: transform 0.2s;
+            margin-top: 10px;
         }
 
         .btn:hover {
@@ -93,10 +104,11 @@
         }
 
         .mockup img {
-            max-width: 100%;
+            max-width: 300px;
             height: auto;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            border: 8px solid #333;
         }
 
         .features {
@@ -154,6 +166,10 @@
                 text-align: center;
                 padding: 40px 0;
             }
+
+            .mockup img {
+                max-width: 80%;
+            }
         }
     </style>
 </head>
@@ -163,45 +179,67 @@
         <header>
             <div class="logo">🐾 FocusPaws</div>
             <nav>
-                <a href="#features" style="text-decoration: none; color: inherit; margin-right: 20px;">Features</a>
+                <a href="#features" style="text-decoration: none; color: inherit; margin-right: 20px;">Features /
+                    Özellikler</a>
                 <a href="privacy-policy.html" style="text-decoration: none; color: inherit;">Privacy</a>
             </nav>
         </header>
 
         <section class="hero">
             <div class="hero-content">
-                <h1>Focus on your work, care for your cat.</h1>
-                <p>Combine productivity with the joy of caring for a virtual pet. Stay focused with the Pomodoro
-                    technique and earn rewards to customize your cat.</p>
-                <a href="#" class="btn">Download Now</a>
+                <!-- English Section -->
+                <div class="lang-section">
+                    <h1>Focus on your work, care for your cat.</h1>
+                    <p>Combine productivity with the joy of caring for a virtual pet. Stay focused with the Pomodoro
+                        technique and earn rewards to customize your cat.</p>
+                    <a href="#" class="btn">Download Now</a>
+                </div>
+
+                <!-- Turkish Section -->
+                <div class="lang-section">
+                    <h1>İşinize odaklanın, kedinizle ilgilenin.</h1>
+                    <p>Üretkenliği sanal evcil hayvan bakımı keyfiyle birleştirin. Pomodoro tekniği ile odaklanın ve
+                        kedinizi özelleştirmek için ödüller kazanın.</p>
+                    <a href="#" class="btn">Hemen İndir</a>
+                </div>
             </div>
+
             <div class="mockup">
-                <!-- Placeholder for App Screenshot -->
-                <div
-                    style="width: 300px; height: 600px; background: #FFB7B2; border-radius: 40px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white;">
-                    App Screenshot</div>
+                <!-- App Screenshot -->
+                <img src="app_screenshot.png" alt="FocusPaws App Screenshot">
             </div>
         </section>
     </div>
 
     <section class="features" id="features">
         <div class="container">
-            <h2 style="text-align: center; font-size: 2.5rem;">Why FocusPaws?</h2>
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 10px;">Why FocusPaws? / Neden FocusPaws?
+            </h2>
+
             <div class="feature-grid">
                 <div class="feature-card">
                     <span class="feature-icon">⏱️</span>
                     <h3>Pomodoro Timer</h3>
-                    <p>Boost your productivity using the proven Pomodoro technique with customizable timer settings.</p>
+                    <p>Boost productivity with customizable timers.</p>
+                    <hr style="margin: 10px 0; border: 0; border-top: 1px solid #eee;">
+                    <h3>Pomodoro Sayacı</h3>
+                    <p>Özelleştirilebilir sayaçlarla üretkenliği artırın.</p>
                 </div>
                 <div class="feature-card">
                     <span class="feature-icon">🐱</span>
                     <h3>Virtual Pet</h3>
-                    <p>Your focus fuels your pet! earning gold to buy food, accessories, and new skins.</p>
+                    <p>Your focus fuels your pet! Earn gold & rewards.</p>
+                    <hr style="margin: 10px 0; border: 0; border-top: 1px solid #eee;">
+                    <h3>Sanal Evcil Hayvan</h3>
+                    <p>Odağınız kedinizi besler! Altın ve ödüller kazanın.</p>
                 </div>
                 <div class="feature-card">
                     <span class="feature-icon">📊</span>
                     <h3>Statistics</h3>
-                    <p>Track your daily and weekly progress with detailed charts and insights.</p>
+                    <p>Track your daily and weekly progress.</p>
+                    <hr style="margin: 10px 0; border: 0; border-top: 1px solid #eee;">
+                    <h3>İstatistikler</h3>
+                    <p>Günlük ve haftalık ilerlemenizi takip edin.</p>
                 </div>
             </div>
         </div>
