@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusPaws - Productivity & Care</title>
+    <style>
+        :root {
+            --primary: #FFB7B2;
+            --secondary: #E2F0CB;
+            --text: #4A4A4A;
+            --bg: #FFF9F5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 80px 0;
+            gap: 50px;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .mockup {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+
+        .mockup img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .features {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            padding: 30px;
+            border-radius: 20px;
+            background: var(--bg);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🐾 FocusPaws</div>
+            <nav>
+                <a href="#features" style="text-decoration: none; color: inherit; margin-right: 20px;">Features</a>
+                <a href="privacy-policy.html" style="text-decoration: none; color: inherit;">Privacy</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Focus on your work, care for your cat.</h1>
+                <p>Combine productivity with the joy of caring for a virtual pet. Stay focused with the Pomodoro
+                    technique and earn rewards to customize your cat.</p>
+                <a href="#" class="btn">Download Now</a>
+            </div>
+            <div class="mockup">
+                <!-- Placeholder for App Screenshot -->
+                <div
+                    style="width: 300px; height: 600px; background: #FFB7B2; border-radius: 40px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white;">
+                    App Screenshot</div>
+            </div>
+        </section>
+    </div>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem;">Why FocusPaws?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">⏱️</span>
+                    <h3>Pomodoro Timer</h3>
+                    <p>Boost your productivity using the proven Pomodoro technique with customizable timer settings.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🐱</span>
+                    <h3>Virtual Pet</h3>
+                    <p>Your focus fuels your pet! earning gold to buy food, accessories, and new skins.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📊</span>
+                    <h3>Statistics</h3>
+                    <p>Track your daily and weekly progress with detailed charts and insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div>&copy; 2026 FocusPaws by Kilicaslan</div>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="app-ads.txt">AdMob info</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
